@@ -9,7 +9,9 @@ Source: [https://krasch.io/hyreskartan](https://krasch.io/hyreskartan)
 The data is based on the "Stadskarta" dataset released on the [Stockholm open data portal](https://dataportalen.stockholm.se/)
 under CC0 license (last updated: 2021-04-13) [[details]](#open-data-portal)
 
-## Vocabulary used in this repository
+I am also releasing this data under CC0 license.
+
+## Disambiguation
 
 | Swedish | English | Explanation / examples |
 | --------------- | --------------- | --------------- |
@@ -18,6 +20,32 @@ under CC0 license (last updated: 2021-04-13) [[details]](#open-data-portal)
 | Vatten | Water | Baltic sea, lakes, rivers |
 
 Stockholm currently has 13 stadsdelsområden containing in total 117 stadsdelar. 
+
+## File overview
+
+### Format
+
+| Folder | Explanation | 
+| --------------- | --------------- | 
+| shapefiles | ESRI-Shapefile format, coordinate system=SWEREF99 (same as original files)
+| geojson | geojson format, coordinate system=CRS84 |
+
+
+### Versions
+
+| Subfolder | Explanation | 
+| --------------- | --------------- | 
+| fullsize | Same detail level as the original data
+| simplified | Smaller file size, achieved by running [ST_SIMPLIFY](https://postgis.net/docs/ST_Simplify.html) with tolerance=3 |
+
+### Files
+
+| Filename | Explanation | Screenshot |
+| --------------- | --------------- | --------------- |
+| stadsdelar.* | Boundaries of the stadsdelar including the water areas, 1 polygon per stadsdel | ![stadsdelar](screenshots/stadsdelar.png "Screenshot of map stadsdelar" )|
+| vatten.* | Boundaries of all the water areas, merged together into 1 (multi-)polygon | ![vatten](screenshots/vatten.png "Screenshot of map stadsdelar_utan_vatten") |
+| stadsdelar_utan_vatten.* | Boundaries of the stadsdelar with the water areas removed, 1 polygon per stadsdel | ![stadsdelar utan vatten](screenshots/stadsdelar_utan_vatten.png "Screenshot of map stadsdelar_utan_vatten") |
+
 
 
 ## Footnotes
