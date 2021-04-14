@@ -1,0 +1,30 @@
+<OGRVRTDataSource>
+    <!-- merge all vatten polygons together
+     ST_BUFFER:   the border between neighbouring polygons does not always match, resulting in the
+                  border still being visible in the merged polygon, this fixes this error   -->
+    <OGRVRTLayer name="vatten">
+        <SrcDataSource>SHP_utanfastigheter_nya_gränser/Vatten_area.shp</SrcDataSource>
+        <SrcSQL dialect="sqlite">
+           SELECT ST_UNION(ST_BUFFER(geometry, 1)) AS geometry
+           FROM Vatten_area
+        </SrcSQL>
+    </OGRVRTLayer>
+
+    <OGRVRTLayer name="stadsdelar">
+        <SrcDataSource>SHP_utanfastigheter_nya_gränser/Adm_area.shp</SrcDataSource>
+        <SrcSQL dialect="sqlite">
+            SELECT NAMN AS name, geometry
+            FROM Adm_area
+            WHERE Kategori='stadsdel'
+        </SrcSQL>
+    </OGRVRTLayer>
+
+    <OGRVRTLayer name="stadsdelsnamndomraden">
+        <SrcDataSource>SHP_utanfastigheter_nya_gränser/Adm_area.shp</SrcDataSource>
+        <SrcSQL dialect="sqlite">
+            SELECT NAMN AS name, geometry
+            FROM Adm_area
+            WHERE Kategori='Stadsdelsnämndsområde'
+        </SrcSQL>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
