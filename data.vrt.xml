@@ -18,13 +18,5 @@
             WHERE Kategori='stadsdel'
         </SrcSQL>
     </OGRVRTLayer>
-
-    <OGRVRTLayer name="stadsdelsnamndomraden">
-        <SrcDataSource>SHP_utanfastigheter_nya_gränser/Adm_area.shp</SrcDataSource>
-        <SrcSQL dialect="sqlite">
-            SELECT NAMN AS name, geometry
-            FROM Adm_area
-            WHERE Kategori='Stadsdelsnämndsområde'
-        </SrcSQL>
-    </OGRVRTLayer>
+    
 </OGRVRTDataSource>

@@ -28,7 +28,6 @@ ogr2ogr "$SHAPEFILES_DIR/fullsize/stadsdelar_utan_vatten.shp" data.vrt.xml -dial
  "SELECT name, ST_DIFFERENCE(stadsdelar.geometry, vatten.geometry)
   FROM stadsdelar, vatten";
 
-
 ##############################################################################
 # Simplified shapefiles
 ##############################################################################
