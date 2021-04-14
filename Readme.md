@@ -1,4 +1,4 @@
-# Shapefiles and geojson files for Stockholm stadsdelar/districts 
+# Shapefiles and geojson files for Stockholm's stadsdelar/districts 
 
 This repository contains the geodata files you need to create visualisations of Stockholm like
 this choropleth map:
