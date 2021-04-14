@@ -53,7 +53,7 @@ In most cases, you should just go ahead and use the pre-generated
 files that I am supplying in the "shapefiles" and "geojson" folders.
 Use the following instructions if you want to generate the files on your own.
 
-These instructions are valid for the 2021-04-13 release of the data. Previous
+These instructions are valid for the 2021-04-13 release of the data in the open data portal. Previous
 releases used rather different directory layouts (and future versions
 might, too...)
 
