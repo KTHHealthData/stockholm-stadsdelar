@@ -10,7 +10,7 @@ Source: [https://krasch.io/hyreskartan](https://krasch.io/hyreskartan)
 The data is based on the "Stadskarta" dataset released on the [Stockholm open data portal](https://dataportalen.stockholm.se/)
 under CC0 license (last updated: 2021-04-13) [[details]](#open-data-portal)
 
-I am releasing this data under CC0 license.
+I am also releasing this data under CC0 license.
 
 ## Disambiguation
 
