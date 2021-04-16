@@ -87,6 +87,15 @@ INFO: Open of `data.vrt.xml'
 2: stadsdelar (Polygon)
 ```
 
+### Fixing one label in "Adm_area.shp"
+
+There is a bug in the official file. The stadsdel
+that should be labeled "VASASTADEN" is actually labeled with "HÄSSELBY GÅRD".
+
+There is no automatic fix for this (I hope the bug is temporary). So
+you need to open ArcGIS / QGIS to manually put the correct label.
+
+
 ### Running the script
 
 (you might have to make some adapations if you are on Windows)
