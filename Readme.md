@@ -1,4 +1,4 @@
-# Shapefiles and geojson files for Stockholm stadsdelar/districts 
+# Shapefiles and geojson files for Stockholm's stadsdelar/districts 
 
 This repository contains the geodata files you need to create visualisations of Stockholm like
 this choropleth map:
@@ -10,7 +10,7 @@ Source: [https://krasch.io/hyreskartan](https://krasch.io/hyreskartan)
 The data is based on the "Stadskarta" dataset released on the [Stockholm open data portal](https://dataportalen.stockholm.se/)
 under CC0 license (last updated: 2021-04-13) [[details]](#open-data-portal)
 
-I am releasing this data under CC0 license.
+I am also releasing this data under CC0 license.
 
 ## Disambiguation
 
@@ -53,7 +53,7 @@ In most cases, you should just go ahead and use the pre-generated
 files that I am supplying in the "shapefiles" and "geojson" folders.
 Use the following instructions if you want to generate the files on your own.
 
-These instructions are valid for the 2021-04-13 release of the data. Previous
+These instructions are valid for the 2021-04-13 release of the data in the open data portal. Previous
 releases used rather different directory layouts (and future versions
 might, too...)
 
